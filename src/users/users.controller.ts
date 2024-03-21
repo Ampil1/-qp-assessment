@@ -24,7 +24,7 @@ export class UsersController {
 
 			const checkUser = await this.userService.getUserByEmail(userData.email);
 			if (checkUser && checkUser.email == userData.email) return { response_code: HttpStatus.BAD_REQUEST, response_data: "User email already exist" };
-			userData.role = "ADMIN";
+			userData.role = "USER";
 			const user = await this.userService.createUser(userData);
 			if (user) return { response_code: HttpStatus.OK, response_data: "User Registered successfully" };
 			else return { response_code: HttpStatus.BAD_REQUEST, response_data: "something went wrong" }

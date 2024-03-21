@@ -3,6 +3,18 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Credentials for Testing
+```bash
+user Credentails
+email - ampilkumarverma@gmail.com
+pass - 123456
+
+Admin Credentials
+email - ampilverma@gmail.com
+pass - 123456
+```
+
+
 ## Installation
 
 ```bash
